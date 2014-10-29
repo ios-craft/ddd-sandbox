@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		408533C01A019728002D54B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 408533BF1A019728002D54B5 /* main.m */; };
 		408533CF1A019772002D54B5 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 408533CE1A019772002D54B5 /* Tests.m */; };
+		696C113008B54F2893879309 /* OrderSubmittedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1A41AFB9E71012D19E62 /* OrderSubmittedEvent.m */; };
+		696C11A66EE1EE4B0A002C42 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C13F110E998261AB61449 /* Money.m */; };
+		696C11D5165F2E704F450FE1 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1CE722BA3AECF938F7A1 /* Product.m */; };
+		696C145198C49D1695AA0A2C /* ProductRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C16A627693E35C0E9C414 /* ProductRepository.m */; };
+		696C1778903A5397CF985563 /* OrderRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C156DD820CCAF830FD7E2 /* OrderRepository.m */; };
+		696C177DBCB5EF89521E4AD1 /* GenericRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C115838ECCBFDDE86B960 /* GenericRepository.m */; };
+		696C17F46DE20106CBF5B33B /* OrderRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C156DD820CCAF830FD7E2 /* OrderRepository.m */; };
+		696C186921FC07BA92E49952 /* EventPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1B270B461412B14C3040 /* EventPublisher.m */; };
+		696C18971389B52F39E1DD2D /* OrderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C12E1110FD75ABF082E24 /* OrderFactory.m */; };
+		696C1981F35F09B1BD6965B7 /* ProductRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C16A627693E35C0E9C414 /* ProductRepository.m */; };
+		696C1A071580C6ACE0B5CF9D /* GenericRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C115838ECCBFDDE86B960 /* GenericRepository.m */; };
+		696C1AC33F6CED1368D6C85B /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1FE7466407E6A39396A8 /* Order.m */; };
+		696C1BD44D28CE18312F15FA /* PurchaseApplicationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1816671BC17BF5309471 /* PurchaseApplicationService.m */; };
+		696C1BDC2E562A15BDC57A57 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1B715CA756F2A742FD7C /* Customer.m */; };
+		696C1C40455026C21CEF9309 /* OrderedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C178D30C033218A9B00DA /* OrderedProduct.m */; };
+		696C1D8766A1BC03F2ED027D /* OrderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1EB8B3607E6C32C8EEBF /* OrderLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +45,33 @@
 		408533CA1A019772002D54B5 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408533CD1A019772002D54B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408533CE1A019772002D54B5 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		696C100AFAAB36889A339B21 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		696C112FA7A29C9E431948E1 /* OrderedProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedProduct.h; sourceTree = "<group>"; };
+		696C115838ECCBFDDE86B960 /* GenericRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericRepository.m; sourceTree = "<group>"; };
+		696C1234E26E104FAA7556C3 /* EventPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPublisher.h; sourceTree = "<group>"; };
+		696C12E1110FD75ABF082E24 /* OrderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFactory.m; sourceTree = "<group>"; };
+		696C135AD155B2DEF63B29BE /* OrderRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderRepository.h; sourceTree = "<group>"; };
+		696C13F110E998261AB61449 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
+		696C156DD820CCAF830FD7E2 /* OrderRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderRepository.m; sourceTree = "<group>"; };
+		696C16A627693E35C0E9C414 /* ProductRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductRepository.m; sourceTree = "<group>"; };
+		696C16AA30D6E7CC73E9D3C2 /* OrderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderLine.h; sourceTree = "<group>"; };
+		696C16E79AB559233668B8BC /* PurchaseApplicationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseApplicationService.h; sourceTree = "<group>"; };
+		696C178D30C033218A9B00DA /* OrderedProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedProduct.m; sourceTree = "<group>"; };
+		696C1816671BC17BF5309471 /* PurchaseApplicationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseApplicationService.m; sourceTree = "<group>"; };
+		696C1924926DD21292A175B6 /* ProductRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductRepository.h; sourceTree = "<group>"; };
+		696C1A41AFB9E71012D19E62 /* OrderSubmittedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderSubmittedEvent.m; sourceTree = "<group>"; };
+		696C1A4E562A0EB701566F01 /* OrderSubmittedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderSubmittedEvent.h; sourceTree = "<group>"; };
+		696C1A7D196481534E93A0CC /* OrderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFactory.h; sourceTree = "<group>"; };
+		696C1B270B461412B14C3040 /* EventPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPublisher.m; sourceTree = "<group>"; };
+		696C1B715CA756F2A742FD7C /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		696C1C0E04E446D700CE1D61 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
+		696C1C7A655D135DB0CD3658 /* RebatePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RebatePolicy.h; sourceTree = "<group>"; };
+		696C1CE722BA3AECF938F7A1 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		696C1D8ACC53A051F239A66D /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		696C1EA6434B407D80702D79 /* GenericRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericRepository.h; sourceTree = "<group>"; };
+		696C1EB8B3607E6C32C8EEBF /* OrderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderLine.m; sourceTree = "<group>"; };
+		696C1F6BA0C2514EC95F6549 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		696C1FE7466407E6A39396A8 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +114,13 @@
 			isa = PBXGroup;
 			children = (
 				408533BF1A019728002D54B5 /* main.m */,
+				696C158A49EA20D8456F070E /* Domain */,
+				696C1A6059E2B618634FDC26 /* Events */,
+				696C1F255E027C0DD0B03CE7 /* ApplicationService */,
+				696C1DB2CAAD3246167B5106 /* Aggregate */,
+				696C117D2823229CA6D6A833 /* Policy */,
+				696C12DB334F02710BF7E311 /* Factory */,
+				696C1CB52AE666CE8CA92EB5 /* Repository */,
 			);
 			path = DDDemo;
 			sourceTree = "<group>";
@@ -90,6 +140,82 @@
 				408533CD1A019772002D54B5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		696C117D2823229CA6D6A833 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				696C1C7A655D135DB0CD3658 /* RebatePolicy.h */,
+			);
+			path = Policy;
+			sourceTree = "<group>";
+		};
+		696C12DB334F02710BF7E311 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				696C1A7D196481534E93A0CC /* OrderFactory.h */,
+				696C12E1110FD75ABF082E24 /* OrderFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		696C158A49EA20D8456F070E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				696C1C0E04E446D700CE1D61 /* Money.h */,
+				696C13F110E998261AB61449 /* Money.m */,
+				696C100AFAAB36889A339B21 /* Product.h */,
+				696C1CE722BA3AECF938F7A1 /* Product.m */,
+				696C1D8ACC53A051F239A66D /* Customer.h */,
+				696C1B715CA756F2A742FD7C /* Customer.m */,
+				696C16AA30D6E7CC73E9D3C2 /* OrderLine.h */,
+				696C1EB8B3607E6C32C8EEBF /* OrderLine.m */,
+				696C112FA7A29C9E431948E1 /* OrderedProduct.h */,
+				696C178D30C033218A9B00DA /* OrderedProduct.m */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		696C1A6059E2B618634FDC26 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				696C1234E26E104FAA7556C3 /* EventPublisher.h */,
+				696C1B270B461412B14C3040 /* EventPublisher.m */,
+				696C1A4E562A0EB701566F01 /* OrderSubmittedEvent.h */,
+				696C1A41AFB9E71012D19E62 /* OrderSubmittedEvent.m */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		696C1CB52AE666CE8CA92EB5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				696C156DD820CCAF830FD7E2 /* OrderRepository.m */,
+				696C135AD155B2DEF63B29BE /* OrderRepository.h */,
+				696C115838ECCBFDDE86B960 /* GenericRepository.m */,
+				696C1EA6434B407D80702D79 /* GenericRepository.h */,
+				696C16A627693E35C0E9C414 /* ProductRepository.m */,
+				696C1924926DD21292A175B6 /* ProductRepository.h */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		696C1DB2CAAD3246167B5106 /* Aggregate */ = {
+			isa = PBXGroup;
+			children = (
+				696C1F6BA0C2514EC95F6549 /* Order.h */,
+				696C1FE7466407E6A39396A8 /* Order.m */,
+			);
+			path = Aggregate;
+			sourceTree = "<group>";
+		};
+		696C1F255E027C0DD0B03CE7 /* ApplicationService */ = {
+			isa = PBXGroup;
+			children = (
+				696C16E79AB559233668B8BC /* PurchaseApplicationService.h */,
+				696C1816671BC17BF5309471 /* PurchaseApplicationService.m */,
+			);
+			path = ApplicationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +306,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				408533C01A019728002D54B5 /* main.m in Sources */,
+				696C11A66EE1EE4B0A002C42 /* Money.m in Sources */,
+				696C11D5165F2E704F450FE1 /* Product.m in Sources */,
+				696C1BDC2E562A15BDC57A57 /* Customer.m in Sources */,
+				696C1D8766A1BC03F2ED027D /* OrderLine.m in Sources */,
+				696C1C40455026C21CEF9309 /* OrderedProduct.m in Sources */,
+				696C186921FC07BA92E49952 /* EventPublisher.m in Sources */,
+				696C113008B54F2893879309 /* OrderSubmittedEvent.m in Sources */,
+				696C1BD44D28CE18312F15FA /* PurchaseApplicationService.m in Sources */,
+				696C1AC33F6CED1368D6C85B /* Order.m in Sources */,
+				696C18971389B52F39E1DD2D /* OrderFactory.m in Sources */,
+				696C17F46DE20106CBF5B33B /* OrderRepository.m in Sources */,
+				696C177DBCB5EF89521E4AD1 /* GenericRepository.m in Sources */,
+				696C145198C49D1695AA0A2C /* ProductRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				408533CF1A019772002D54B5 /* Tests.m in Sources */,
+				696C1778903A5397CF985563 /* OrderRepository.m in Sources */,
+				696C1A071580C6ACE0B5CF9D /* GenericRepository.m in Sources */,
+				696C1981F35F09B1BD6965B7 /* ProductRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
