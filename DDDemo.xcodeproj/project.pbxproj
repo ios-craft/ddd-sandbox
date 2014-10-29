@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		408533C01A019728002D54B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 408533BF1A019728002D54B5 /* main.m */; };
+		408533CF1A019772002D54B5 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 408533CE1A019772002D54B5 /* Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		408533BC1A019728002D54B5 /* DDDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		408533BF1A019728002D54B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		408533CA1A019772002D54B5 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408533CD1A019772002D54B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408533CE1A019772002D54B5 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		408533B91A019728002D54B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408533C71A019772002D54B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				408533BE1A019728002D54B5 /* DDDemo */,
+				408533CB1A019772002D54B5 /* Tests */,
 				408533BD1A019728002D54B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				408533BC1A019728002D54B5 /* DDDemo */,
+				408533CA1A019772002D54B5 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,23 @@
 				408533BF1A019728002D54B5 /* main.m */,
 			);
 			path = DDDemo;
+			sourceTree = "<group>";
+		};
+		408533CB1A019772002D54B5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				408533CE1A019772002D54B5 /* Tests.m */,
+				408533CC1A019772002D54B5 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		408533CC1A019772002D54B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				408533CD1A019772002D54B5 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +112,23 @@
 			productReference = 408533BC1A019728002D54B5 /* DDDemo */;
 			productType = "com.apple.product-type.tool";
 		};
+		408533C91A019772002D54B5 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408533D01A019772002D54B5 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				408533C61A019772002D54B5 /* Sources */,
+				408533C71A019772002D54B5 /* Frameworks */,
+				408533C81A019772002D54B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 408533CA1A019772002D54B5 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +139,9 @@
 				ORGANIZATIONNAME = Tomek;
 				TargetAttributes = {
 					408533BB1A019728002D54B5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					408533C91A019772002D54B5 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -109,9 +159,20 @@
 			projectRoot = "";
 			targets = (
 				408533BB1A019728002D54B5 /* DDDemo */,
+				408533C91A019772002D54B5 /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		408533C81A019772002D54B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		408533B81A019728002D54B5 /* Sources */ = {
@@ -119,6 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				408533C01A019728002D54B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408533C61A019772002D54B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408533CF1A019772002D54B5 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +282,38 @@
 			};
 			name = Release;
 		};
+		408533D11A019772002D54B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		408533D21A019772002D54B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -230,6 +331,14 @@
 			buildConfigurations = (
 				408533C41A019728002D54B5 /* Debug */,
 				408533C51A019728002D54B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		408533D01A019772002D54B5 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408533D11A019772002D54B5 /* Debug */,
+				408533D21A019772002D54B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
