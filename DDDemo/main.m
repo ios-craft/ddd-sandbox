@@ -17,8 +17,13 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
 
 
-        Product *prod = [[ProductRepository new] load:0];
-        NSLog(@"Price of %@ is %d", prod.name, prod.price.amount);
+
+        ProductRepository *repository = [ProductRepository new];
+        for (int j=0; j<4; j++) {
+            Product *prod = [repository load:j];
+            NSLog(@"ID:%d Price of %@ is %@", j+1, prod.name, prod.price.amount);
+        }
+
     }
     return 0;
 }

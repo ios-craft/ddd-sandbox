@@ -11,11 +11,12 @@
 @interface Product : NSObject
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, assign) Money *price;
+@property (nonatomic, strong) Money *price;
 
 - (instancetype)initWithName:(NSString *)name price:(Money *)price;
+
 + (instancetype)productWithName:(NSString *)name price:(Money *)price;
+
+
 + (instancetype)productWithName:(NSString *)name pricePLN:(int)price;
-
-
 @end

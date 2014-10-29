@@ -15,8 +15,7 @@
     if (self) {
         self.name = name;
         self.price = price;
-        
-        NSLog(@"Hoho %d", price.amount);
+
     }
 
     return self;
@@ -28,7 +27,7 @@
 
 + (instancetype)productWithName:(NSString *)name pricePLN:(int)price {
     
-    Money *decimalPrice = [Money moneyWithAmount:price];
+    Money *decimalPrice = [Money moneyWithIntegerAmount:price];
     return [[self alloc] initWithName:name price:decimalPrice];
 }
 

@@ -5,6 +5,7 @@
 
 #import "ProductRepository.h"
 #import "Product.h"
+#import "Money.h"
 
 
 @implementation ProductRepository {
@@ -25,10 +26,10 @@
 
 - (void)fillWithData {
     products = @[
-            [Product productWithName:@"Cebula" pricePLN:3],
-            [Product productWithName:@"Buraki" pricePLN:6]
-//            [Product productWithName:@"Szczaw" pricePLN:4],
-//            [Product productWithName:@"Mirabelki" pricePLN:2]
+            [Product productWithName:@"Cebula" pricePLN:7],
+            [Product productWithName:@"Buraki" pricePLN:6],
+            [Product productWithName:@"Szczaw" pricePLN:4],
+            [Product productWithName:@"Mirabelki" pricePLN:11]
             // add your own...
         ];
 }

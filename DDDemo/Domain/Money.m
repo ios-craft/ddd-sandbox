@@ -4,12 +4,13 @@
 //
 
 #import "Money.h"
+#import "Product.h"
 
 
 @implementation Money {
 
 }
-- (instancetype)initWithAmount:(int)amount {
+- (instancetype)initWithAmount:(NSDecimalNumber *)amount {
     self = [super init];
     if (self) {
         self.amount = amount;
@@ -19,9 +20,26 @@
     return self;
 }
 
-+ (instancetype)moneyWithAmount:(int)amount {
+
++ (instancetype)moneyWithAmount:(NSDecimalNumber *)amount {
     return [[self alloc] initWithAmount:amount];
 }
+
++ (instancetype)pln:(int)amountZloty {
+    return [self moneyWithAmount:[NSDecimalNumber decimalNumberWithMantissa:amountZloty
+                                                                   exponent:0
+                                                                 isNegative:NO]];
+}
+
++ (Money *)moneyWithIntegerAmount:(int)price {
+    return [self pln:price];
+
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%.2f %@", self.amount.doubleValue, self.currencyCode];
+}
+
 
 
 @end

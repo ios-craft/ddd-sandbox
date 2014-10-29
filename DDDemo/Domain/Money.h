@@ -9,11 +9,8 @@
 @interface Money : NSObject
 
 @property (nonatomic, copy) NSString *currencyCode;
-@property (nonatomic, assign) int amount;
-
-- (instancetype)initWithAmount:(int)amount;
-
-+ (instancetype)moneyWithAmount:(int)amount;
+@property (nonatomic, strong) NSDecimalNumber *amount;
 
 
++ (Money *)moneyWithIntegerAmount:(int)price;
 @end
