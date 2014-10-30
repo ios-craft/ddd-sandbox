@@ -9,6 +9,9 @@
 @interface PurchaseApplicationService : NSObject
 
 
+- (long)createNewOrder;
 
+- (void)addProduct:(long)productId toOrder:(long)orderId quantity:(int)quantity;
 
+- (void)approveOrder:(long)orderId;
 @end

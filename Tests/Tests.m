@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import "PurchaseApplicationService.h"
 
 @interface Tests : XCTestCase
 
@@ -27,6 +29,12 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
+    PurchaseApplicationService *servis = OCMClassMock([PurchaseApplicationService class]);
+    
+    long order = [servis createNewOrder];
+    
+    NSLog(@"Order id %ld", order);
+    
     XCTAssert(YES, @"Pass");
 }
 

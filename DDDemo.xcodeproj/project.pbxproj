@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		408533C01A019728002D54B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 408533BF1A019728002D54B5 /* main.m */; };
 		408533CF1A019772002D54B5 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 408533CE1A019772002D54B5 /* Tests.m */; };
+		408533D61A024673002D54B5 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408533D51A024673002D54B5 /* OCMock.framework */; };
+		408533D81A0246EF002D54B5 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C13F110E998261AB61449 /* Money.m */; };
+		408533DA1A0246EF002D54B5 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1CE722BA3AECF938F7A1 /* Product.m */; };
+		408533DC1A0246EF002D54B5 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1B715CA756F2A742FD7C /* Customer.m */; };
+		408533DE1A0246EF002D54B5 /* OrderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1EB8B3607E6C32C8EEBF /* OrderLine.m */; };
+		408533E01A0246EF002D54B5 /* OrderedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C178D30C033218A9B00DA /* OrderedProduct.m */; };
+		408533E21A0246EF002D54B5 /* EventPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1B270B461412B14C3040 /* EventPublisher.m */; };
+		408533E41A0246EF002D54B5 /* OrderSubmittedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1A41AFB9E71012D19E62 /* OrderSubmittedEvent.m */; };
+		408533E61A0246EF002D54B5 /* PurchaseApplicationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1816671BC17BF5309471 /* PurchaseApplicationService.m */; };
+		408533E81A0246EF002D54B5 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1FE7466407E6A39396A8 /* Order.m */; };
+		408533EB1A0246EF002D54B5 /* OrderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C12E1110FD75ABF082E24 /* OrderFactory.m */; };
 		696C113008B54F2893879309 /* OrderSubmittedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1A41AFB9E71012D19E62 /* OrderSubmittedEvent.m */; };
 		696C11A66EE1EE4B0A002C42 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C13F110E998261AB61449 /* Money.m */; };
 		696C11D5165F2E704F450FE1 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 696C1CE722BA3AECF938F7A1 /* Product.m */; };
@@ -45,6 +56,7 @@
 		408533CA1A019772002D54B5 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408533CD1A019772002D54B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408533CE1A019772002D54B5 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		408533D51A024673002D54B5 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		696C100AFAAB36889A339B21 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		696C112FA7A29C9E431948E1 /* OrderedProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedProduct.h; sourceTree = "<group>"; };
 		696C115838ECCBFDDE86B960 /* GenericRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericRepository.m; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408533D61A024673002D54B5 /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				408533CE1A019772002D54B5 /* Tests.m */,
+				408533D41A024609002D54B5 /* Test Libraries */,
 				408533CC1A019772002D54B5 /* Supporting Files */,
 			);
 			path = Tests;
@@ -140,6 +154,14 @@
 				408533CD1A019772002D54B5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		408533D41A024609002D54B5 /* Test Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				408533D51A024673002D54B5 /* OCMock.framework */,
+			);
+			name = "Test Libraries";
 			sourceTree = "<group>";
 		};
 		696C117D2823229CA6D6A833 /* Policy */ = {
@@ -326,6 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408533D81A0246EF002D54B5 /* Money.m in Sources */,
+				408533DA1A0246EF002D54B5 /* Product.m in Sources */,
+				408533DC1A0246EF002D54B5 /* Customer.m in Sources */,
+				408533DE1A0246EF002D54B5 /* OrderLine.m in Sources */,
+				408533E01A0246EF002D54B5 /* OrderedProduct.m in Sources */,
+				408533E21A0246EF002D54B5 /* EventPublisher.m in Sources */,
+				408533E41A0246EF002D54B5 /* OrderSubmittedEvent.m in Sources */,
+				408533E61A0246EF002D54B5 /* PurchaseApplicationService.m in Sources */,
+				408533E81A0246EF002D54B5 /* Order.m in Sources */,
+				408533EB1A0246EF002D54B5 /* OrderFactory.m in Sources */,
 				408533CF1A019772002D54B5 /* Tests.m in Sources */,
 				696C1778903A5397CF985563 /* OrderRepository.m in Sources */,
 				696C1A071580C6ACE0B5CF9D /* GenericRepository.m in Sources */,
@@ -431,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Tests",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -438,6 +471,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -449,9 +483,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Tests",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -475,6 +511,7 @@
 				408533C51A019728002D54B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		408533D01A019772002D54B5 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +520,7 @@
 				408533D21A019772002D54B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
