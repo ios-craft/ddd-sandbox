@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "Order.h"
+#import "Product.h"
+#import "Money.h"
 
 @interface Tests : XCTestCase
 
@@ -25,9 +28,21 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
+
+- (void)testDummy {
     XCTAssert(YES, @"Pass");
+}
+
+- (void)testShould_Add_One_Product_To_Order {
+
+    Order *order = [Order new];
+
+    [order addProduct:[Product productWithName:@"testProduct" price:[Money zeroPLN]] quantity:1];
+
+    NSArray *ordered = [order getOrderedProducts];
+
+    XCTAssertEqual(ordered.count, 1);
+    
 }
 
 

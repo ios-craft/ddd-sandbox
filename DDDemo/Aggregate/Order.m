@@ -7,6 +7,9 @@
 #import "Product.h"
 #import "Money.h"
 #import "RebatePolicy.h"
+#import "OrderLine.h"
+#import "OrderedProduct.h"
+
 
 typedef enum  {
     DRAFT, SUBMITTED, ARCHIVED
@@ -21,8 +24,24 @@ typedef enum  {
 
 }
 
-- (void) addProduct:(Product *)product quantity:(int)quantity {
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        items = [NSMutableArray array];
+    }
+    return self;
+}
 
+
+- (void) addProduct:(Product *)product quantity:(int)quantity {
+    OrderLine *orderLine = [[OrderLine alloc] initWithProduct:product
+                                                     quantity:quantity
+                                                  regularCost:[Money zeroPLN]
+                                                effectiveCost:[Money zeroPLN]];
+
+    [items addObject:orderLine];
+
+    
 }
 
 - (void)applyRebate:(id <RebatePolicy>)rebatePolicy {
@@ -39,7 +58,15 @@ typedef enum  {
 
 // Should return array of OrderedProduct
 - (NSArray *)getOrderedProducts {
-    return @[];
+    NSMutableArray *result = [NSMutableArray array];
+    for (OrderLine *ol in items) {
+        OrderedProduct *op = [OrderedProduct productWithName:ol.name
+                                                    quantity:ol.quantity
+                                                 regularCost:[Money zeroPLN]
+                                               effectiveCost:[Money zeroPLN]];
+        [result addObject:op];
+    }
+    return result;
 }
 
 
