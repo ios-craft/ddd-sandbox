@@ -13,4 +13,6 @@
 
 
 + (Money *)moneyWithIntegerAmount:(int)price;
++ (Money *)zeroPLN;
+
 @end

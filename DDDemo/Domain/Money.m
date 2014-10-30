@@ -40,6 +40,9 @@
     return [NSString stringWithFormat:@"%.2f %@", self.amount.doubleValue, self.currencyCode];
 }
 
++ (Money *)zeroPLN {
+    return [self moneyWithAmount:[NSDecimalNumber zero]];
+}
 
 
 @end
